@@ -184,7 +184,7 @@ def setup_gemini():
     try:
         # In a real app, you would use st.secrets to securely store your API key
         # For demo purposes, we're using a placeholder
-        api_key = "your_gemini_api_key_here"  # Replace with your actual API key
+        api_key = "AIzaSyBHiuLjXp3gtW8QK6xqfJgaHtL4APKfGaQ"  # Replace with your actual API key
         genai.configure(api_key=api_key)
         return genai.GenerativeModel('gemini-pro')
     except:
@@ -457,5 +457,5 @@ def main():
             # Display demo results
             display_analysis_results(demo_analysis)
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
